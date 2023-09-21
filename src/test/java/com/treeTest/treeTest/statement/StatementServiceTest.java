@@ -30,7 +30,7 @@ public class StatementServiceTest {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openM    ocks(this);
+        MockitoAnnotations.openMocks(this);
     }
 
 

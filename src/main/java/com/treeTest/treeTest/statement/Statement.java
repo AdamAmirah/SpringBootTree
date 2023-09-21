@@ -1,7 +1,6 @@
 package com.treeTest.treeTest.statement;
 
 import com.treeTest.treeTest.account.Account;
-//import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,14 +13,10 @@ import org.springframework.data.relational.core.mapping.Table;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-//@Entity
 @Table("statement")
 public class Statement {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-//    @ManyToOne
-//    @JoinColumn(name = "account_id")
     @Column("account_id")
     private Account account;
     @Column("datefield")
