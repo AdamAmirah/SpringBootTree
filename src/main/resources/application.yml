@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:ucanaccess:///home/amirah/Documents/JavaAssignment/accountsdb.accdb;openExclusive=false;ignoreCase=true;memory=false
+    driver-class-name: net.ucanaccess.jdbc.UcanaccessDriver
+    username: admin
+    password: admin
+  server:
+    servlet:
+      session:
+        timeout: 300s
+  jpa:
+    hibernate:
+      ddl-auto: none
